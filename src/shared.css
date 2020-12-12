@@ -1,3 +1,9 @@
 h2 {
     color: chocolate;
 }
+
+span.foo {
+    font-weight: bold;
+    text-decoration: underline;
+    color: lightseagreen;
+}
