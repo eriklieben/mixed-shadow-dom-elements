@@ -11,7 +11,7 @@ h1 {
     color: red;
 }
 
-/* change h2 style of content that is inside of slot */
-::slotted(h2) {
-    color: blue;
+/* change h3 style of content that is inside of slot */
+::slotted(h3) {
+    color: blue; 
 }
