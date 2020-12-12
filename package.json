@@ -1,0 +1,47 @@
+{
+  "name": "aurelia-monaco-editor",
+  "description": "An Aurelia 2 client application.",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "???"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "aurelia": "dev",
+    "monaco-editor": "^0.21.2"
+  },
+  "devDependencies": {
+    "@aurelia/testing": "dev",
+    "@aurelia/webpack-loader": "dev",
+    "@types/node": "^14.11.2",
+    "@typescript-eslint/eslint-plugin": "^4.3.0",
+    "@typescript-eslint/parser": "^4.3.0",
+    "autoprefixer": "^10.0.1",
+    "css-loader": "^4.3.0",
+    "eslint": "^7.10.0",
+    "file-loader": "^6.1.0",
+    "html-webpack-plugin": "^4.5.0",
+    "htmlhint": "^0.14.1",
+    "monaco-editor-webpack-plugin": "^2.0.0",
+    "postcss": "^8.1.1",
+    "postcss-loader": "^4.0.2",
+    "rimraf": "^3.0.2",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^8.0.4",
+    "typescript": "^4.0.3",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.44.2",
+    "webpack-bundle-analyzer": "^3.9.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "scripts": {
+    "lint:js": "eslint src test --ext .js,.ts",
+    "lint:html": "htmlhint -c .htmlhintrc src",
+    "lint": "npm run lint:js && npm run lint:html",
+    "start": "webpack-dev-server",
+    "build": "rimraf dist && webpack --env production",
+    "analyze": "rimraf dist && webpack --env production --analyze"
+  }
+}

@@ -1,0 +1,17 @@
+:host {
+    display: block;
+    border: 1px solid #e3e3e3;
+    padding: 1rem;
+    border-radius: 1rem;
+    max-width: 65ch;
+    color: hotpink;
+}
+
+h1 {
+    color: red;
+}
+
+/* change h2 style of content that is inside of slot */
+::slotted(h2) {
+    color: blue;
+}
